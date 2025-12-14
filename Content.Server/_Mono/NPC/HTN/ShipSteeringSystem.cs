@@ -172,7 +172,7 @@ public sealed partial class ShipSteeringSystem : EntitySystem
         {
             var shipAABB = shipGrid.LocalAABB.Enlarged(4f); // enlarge a bit for safety
             var shipPosVec = shipPos.Position;
-            var localBrakeBounds = shipAABB.ExtendToContain(new Vector2(0, brakePath));
+            var localBrakeBounds = shipAABB.ExtendToContain(new Vector2(0, brakePath + 50f)); // check extra distance
             var brakeBounds = new Box2(localBrakeBounds.BottomLeft + shipPosVec, localBrakeBounds.TopRight + shipPosVec);
             var velAngle = linVel.ToWorldAngle();
             var rotatedBrakeBounds = new Box2Rotated(brakeBounds, velAngle - new Angle(Math.PI), shipPosVec);
@@ -216,10 +216,22 @@ public sealed partial class ShipSteeringSystem : EntitySystem
 
                     var dodgeDir = NormalizedOrZero(sideVec);
                     var dodgeVec = GetGoodThrustVector((-shipNorthAngle).RotateVec(sideVec), shuttle);
+<<<<<<< HEAD
                     var dodgeThrust = _mover.GetDirectionThrust(dodgeVec, shuttle, shipBody);
                     var dodgeAccelVec = dodgeThrust * shipBody.InvMass;
                     var dodgeAccel = dodgeAccelVec.Length();
                     var dodgeTime = linVel.LengthSquared() / (2f * dodgeAccel);
+||||||| parent of fe2bb201c4e (further tweaks)
+                    var dodgeThrust = _mover.GetDirectionThrust(dodgeVec, shuttle, shipBody).Length();
+                    var dodgeAccel = dodgeThrust * shipBody.InvMass;
+                    var dodgeTime = linVel.LengthSquared() / (2f * dodgeAccel);
+=======
+                    var dodgeThrust = _mover.GetDirectionThrust(dodgeVec, shuttle, shipBody).Length();
+                    var dodgeAccel = dodgeThrust * shipBody.InvMass;
+                    var dodgeLeft = sumRadius - sideDist;
+                    var dodgeVel = Vector2.Dot(linVel, dodgeDir);
+                    var dodgeTime = (-dodgeVel + MathF.Sqrt(dodgeVel * dodgeVel + 2f * dodgeLeft * dodgeAccel)) / dodgeAccel;
+>>>>>>> fe2bb201c4e (further tweaks)
 
                     var inVel = Vector2.Dot(toOther, linVel) * toOther / toOther.LengthSquared();
                     var maxInAccel = 2f * (dist / dodgeTime - inVel.Length()) / dodgeTime;
@@ -229,7 +241,19 @@ public sealed partial class ShipSteeringSystem : EntitySystem
                     var inAccelThrust = inThrust * shipBody.InvMass;
                     var inAccel = inAccelThrust.Length();
 
+<<<<<<< HEAD
                     wishInputVec = toDestDir * MathF.Min(1f, maxInAccel / inAccel) + dodgeDir;
+||||||| parent of fe2bb201c4e (further tweaks)
+                    // if we don't have dodge acceleration, brake and turn to the side and hope this helps
+                    var inInput = dodgeAccel == 0f ? -1f : MathF.Min(1f, maxInAccel / inAccel);
+
+                    wishInputVec = toDestDir * inInput + dodgeDir;
+=======
+                    // if we don't have dodge acceleration, brake and turn to the side and hope this helps
+                    var inInput = dodgeAccel == 0f ? -1f : float.Clamp(maxInAccel / inAccel, -1f, 1f);
+
+                    wishInputVec = toDestDir * inInput + dodgeDir;
+>>>>>>> fe2bb201c4e (further tweaks)
                     didCollisionAvoidance = true;
                 }
             }
