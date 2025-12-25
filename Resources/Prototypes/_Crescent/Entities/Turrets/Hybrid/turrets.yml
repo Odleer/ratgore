@@ -1,0 +1,60 @@
+#starburst
+
+- type: entity
+  parent: BaseTurretShipgun
+  id: WeaponTurretSmallMachinegun
+  suffix: Machinegun, Small Ballistics
+  name: 20mm 'Screamer' light carbine repeater cannon
+  description: A light repeating carbine system for use in primary weapons systems in fighters or civilian shuttles - or as support and point defense weapons in larger warships. The repeating autocannon is so widespread and common that it's origin can't be traced to one single corporation - although organizations are known to modify the design for their own purposes. 
+  components:
+    - type: Sprite
+      sprite: _Crescent/Objects/Turrets/Projectile/machinegun.rsi
+      drawdepth: Mobs
+      layers:
+        - state: machinegun
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 400
+          # TODO: Construction graph
+          behaviors:
+            - !type:ChangeConstructionNodeBehavior
+              node: machineFrame
+            - !type:PlaySoundBehavior
+              sound:
+                collection: MetalGlassBreak
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+          ents: []
+    - type: Gun
+      fireOnDropChance: 0
+      projectileSpeed: 95
+      fireRate: 1.2
+      selectedMode: FullAuto
+      availableModes:
+        - FullAuto
+      angleDecay: 45
+      minAngle: 5
+      maxAngle: 15
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Gunshots/ship_svalinn.ogg
+        params:
+          variation: 0.12
+    - type: RechargeBasicEntityAmmo
+      rechargeCooldown: 2
+      rechargeSound:
+        path: /Audio/Weapons/Guns/Bolt/lmg_bolt_closed.ogg
+        params:
+          pitch: 1.2
+          variation: 0.08
+    - type: BasicEntityAmmoProvider
+      proto: BulletMachineGunPlasmaShuttle
+      capacity: 60
+      count: 10
+    - type: ApcPowerReceiver
+      powerLoad: 2500
+    - type: HardpointAnchorableOnly
+      class: Energy
+      size: Small

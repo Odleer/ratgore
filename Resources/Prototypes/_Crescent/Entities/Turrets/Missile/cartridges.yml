@@ -258,3 +258,29 @@
   - type: SpentAmmoVisuals
   - type: StaticPrice
     price: 250
+
+#catapult
+
+- type: entity
+  id: Cartridge330mmRocket
+  name: 330mm heat-seeking heavy cruise missile
+  description: A massive, bulky cruise missile with an inbuilt tracking and course correction system. It's slow speed allows it to phase through deflector bubbles. Slow and easy to shoot down.
+  parent: BaseCartridge
+  components:
+  - type: Tag
+    tags:
+      - Cartridge
+      - CartridgeCatapult
+  - type: CartridgeAmmo
+    deleteOnSpawn: true
+    proto: ProjectileCatapultMissile
+  - type: Sprite
+    sprite: _Crescent/Objects/Turrets/Ammunition/Cartridge/catapult.rsi
+    layers:
+    - state: catapult
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: MultiHandedItem
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 500

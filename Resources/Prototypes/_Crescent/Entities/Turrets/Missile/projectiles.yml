@@ -525,7 +525,7 @@
     tags:
       - TorpedoGarg
   - type: TimedDespawn
-    lifetime: 50
+    lifetime: 25
   - type: Sprite
     sprite: _Crescent/Objects/Turrets/Ammunition/Projectiles/gargoyle.rsi
     layers:
@@ -595,7 +595,7 @@
     tags:
       - TorpedoGarg
   - type: TimedDespawn
-    lifetime: 50
+    lifetime: 25
   - type: Sprite
     sprite: _Crescent/Objects/Turrets/Ammunition/Projectiles/gargoyle.rsi
     layers:
@@ -612,6 +612,79 @@
     topSpeed: 45
     fieldOfView: 35
     defaultSeekingRange: 2500 # long range
+    guidanceAlgorithm: PredictiveGuidance
+  - type: PointLight
+    radius: 3.5
+    color: orange
+    energy: 0.5
+  - type: ProjectileIFF
+    visualType: SquareReticle
+    color: Red
+  - type: Fixtures
+    fixtures:
+      projectile:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.65,0.25,0.65"
+        layer:
+        - BulletImpassable
+        mask:
+        - Impassable
+        - BulletImpassable
+        hard: true
+      fly-by: *flybyfixture
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 175
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:ExplodeBehavior
+  - type: IgnoresHullrotShields
+
+#catapult
+
+- type: entity
+  id: ProjectileCatapultMissile
+  name: 330mm guided heavy cruise missile
+  description: Shit.
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: ShipWeaponProjectile
+  - type: Projectile
+    ignoreWeaponGrid: true
+    damage:
+      types:
+        Structural: 8000
+        Blunt: 400
+  - type: Tag
+    tags:
+      - TorpedoGarg
+  - type: TimedDespawn
+    lifetime: 50
+  - type: Sprite
+    sprite: _Crescent/Objects/Turrets/Ammunition/Projectiles/gargoyle.rsi
+    layers:
+      - state: ncwlgargoylefired
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 55000
+    intensitySlope: 200
+    maxIntensity: 5000
+    maxTileBreak: 10
+  - type: HeatSeeking
+    rotationSpeed: 12 # slow turn rate
+    acceleration: 25
+    topSpeed: 60
+    fieldOfView: 35
+    defaultSeekingRange: 3500 # long range
     guidanceAlgorithm: PredictiveGuidance
   - type: PointLight
     radius: 3.5

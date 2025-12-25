@@ -8,6 +8,11 @@
 - type: Tag
   id: CartridgeGargoyle
 
+#catapult tags
+
+- type: Tag
+  id: CartridgeCatapult
+
 #azimuth
 
 - type: Tag
