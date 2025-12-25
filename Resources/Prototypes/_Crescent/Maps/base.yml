@@ -143,4 +143,4 @@
       stationProto: StandardCrescentStation # hehe
       components:
         - type: StationNameSetup
-          mapNameTemplate: "Sector Crescent"
+          mapNameTemplate: "" # this was so easy why did nobody do this before
