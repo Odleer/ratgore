@@ -19,14 +19,14 @@
     gameMapsByID:
       PortBalreska:
         gameMapID: PortBalreska
-        posX: 750
-        posY: -5000
+        posX: 1499
+        posY: -5001
         IFFColor: Orange
         IFFFaction: NCWL
       Dochenskaya:
         gameMapID: Dochenskaya
-        posX: 2625
-        posY: 3300
+        posX: 5249
+        posY: 6599
         IFFColor: IndianRed
         IFFFaction: TFSC
       GliessSanto:
@@ -42,92 +42,111 @@
         IFFFaction: SHI
       Countsman:
         gameMapID: Countsman
-        posX: -2400
-        posY: 4500
+        posX: -2500
+        posY: 6000
         IFFColor: Purple
         IFFFaction: DSM
 #      Refuge:
 #        gameMapID: Refuge
-#        posX: -4500
-#        posY: -1500
-#        randomOffsetX: 1500
-#        randomOffsetY: 1500
+#        posX: -9001
+#        posY: -3001
+#        randomOffsetX: 3000
+#        randomOffsetY: 3000
+      TribalHideout:
+        gameMapID: TribalHideout
+        posX: -4801
+        posY: -3601
+        randomOffsetX: 2000
+        randomOffsetY: 2000
+      #      Aasim: #reenable whenever TAP is gameplay ready
+      #        gameMapID: Aasim
+      #        posX: 4500
+      #        posY: -4500
+      #      Wisp: #CyberdawnMothership whenever we have the map
+      #        gameMapID: Wisp #CyberdawnMothership
+      #        posX: 1500
+      #        posY: 3600
       Jackal:
         gameMapID: Jackal
-        posX: -5250
-        posY: -2250
+        posX: -8501
+        posY: -4501
         IFFColor: IndianRed
         IFFFaction: TFSC
       Dawnbreaker:
         gameMapID: Dawnbreaker
-        posX: -3250
-        posY: -1250
+        posX: -6501
+        posY: -2501
         IFFColor: IndianRed
         IFFFaction: TFSC
       Graveyard:
         gameMapID: Graveyard
-        posX: 1300
-        posY: 2850
+        posX: 4199
+        posY: 5699
       StrandedShip:
         gameMapID: StrandedShip
-        posX: 2137
-        posY: 2715
+        posX: 4274
+        posY: 5429
         HideIFF: true
       Fighter1:
         gameMapID: Fighter1
-        posX: 2497
-        posY: 3165
+        posX: 4994
+        posY: 6329
         HideIFF: true
       Fighter2:
         gameMapID: Fighter2
-        posX: 2491
-        posY: 3262
+        posX: 4981
+        posY: 6524
         HideIFF: true
       SolarSailorDerelict:
         gameMapID: SolarSailorDerelict
-        posX: 2512
-        posY: 2602
+        posX: 5024
+        posY: 5204
         HideIFF: true
       ImperialHaulerWreck:
         gameMapID: ImperialHaulerWreck
-        posX: 2490
-        posY: 3037
+        posX: 4979
+        posY: 6074
+        HideIFF: true
+      FogwreckedDerelict:
+        gameMapID: FogwreckedDerelict
+        posX: 1799
+        posY: -10501
         HideIFF: true
       Craster:
         gameMapID: Craster
-        posX: -5250
-        posY: 750
+        posX: -10501
+        posY: 1499
       Taypan1AsteroidBelt:
         gameMapID: Taypan1AsteroidBelt
-        posX: -5000
-        posY: 5000
+        posX: -3000
+        posY: -5001
       Taypan2AsteroidBelt:
         gameMapID: Taypan2AsteroidBelt
-        posX: 3700
-        posY: -2000
+        posX: 4049
+        posY: -2701
       Marchbelt:
         gameMapID: Marchbelt
-        posX: -3750
-        posY: 3150
+        posX: -7501
+        posY: 6299
       Deepbelt:
         gameMapID: Deepbelt
-        posX: -3800
-        posY: -300
+        posX: -4801
+        posY: -601
       FaintSignal:
         gameMapID: FaintSignal
-        posX: 1500
-        posY: 750
+        posX: 2999
+        posY: 1499
       TribalScrapyard:
         gameMapID: TribalScrapyard
-        posX: 1800
-        posY: -2700
+        posX: 4500
+        posY: -5401
       Hayes:
         gameMapID: Hayes
-        posX: 2000
-        posY: 1400
+        posX: 3999
+        posY: 2799
         IFFColor: IndianRed
         IFFFaction: TFSC
       AncientBattlefield:
         gameMapID: AncientBattlefield
-        posX: 300
-        posY: 3750
+        posX: 599
+        posY: 7499
