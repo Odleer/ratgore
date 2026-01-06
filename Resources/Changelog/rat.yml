@@ -71,3 +71,10 @@ Entries:
   id: 10
   time: '2026-01-06T11:22:25Z'
   url: null
+- author: Odleer
+  changes:
+    - message: Update factions.yml
+      type: Tweak
+  id: 11
+  time: '2026-01-06T14:27:40Z'
+  url: null
