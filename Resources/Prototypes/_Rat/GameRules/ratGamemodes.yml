@@ -275,3 +275,100 @@
         gameMapID: AncientBattlefield
         posX: 600
         posY: 7500
+
+- type: gamePreset
+  id: DsmAndNswl
+  alias:
+  - dsmandncwl
+  name: БМС и ЛРНП
+  showInVote: true
+  description: Последние дни Тайпана. Длится 2-4 часа. Маленькая карта.
+  rules:
+  - DsmAndNswl
+  - HullrotEventScheduler
+
+- type: entity
+  id: DsmAndNswl
+  parent: BaseGameRule
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AdventureRule
+    gameMapsByID:
+      PortBalreska:
+        gameMapID: PortBalreska
+        posX: 1499
+        posY: -5001
+        IFFColor: Orange
+        IFFFaction: NCWL
+      Countsman:
+        gameMapID: Countsman
+        posX: -500
+        posY: 3000
+        IFFColor: Purple
+        IFFFaction: DSM
+      Graveyard:
+        gameMapID: Graveyard
+        posX: 4199
+        posY: 5699
+      StrandedShip:
+        gameMapID: StrandedShip
+        posX: 4274
+        posY: 5429
+        HideIFF: true
+      Fighter1:
+        gameMapID: Fighter1
+        posX: 4994
+        posY: 6329
+        HideIFF: true
+      Fighter2:
+        gameMapID: Fighter2
+        posX: 4981
+        posY: 6524
+        HideIFF: true
+      SolarSailorDerelict:
+        gameMapID: SolarSailorDerelict
+        posX: 5024
+        posY: 5204
+        HideIFF: true
+      ImperialHaulerWreck:
+        gameMapID: ImperialHaulerWreck
+        posX: 4979
+        posY: 6074
+        HideIFF: true
+      FogwreckedDerelict:
+        gameMapID: FogwreckedDerelict
+        posX: 1799
+        posY: -10501
+        HideIFF: true
+      Craster:
+        gameMapID: Craster
+        posX: -10501
+        posY: 1499
+      Taypan1AsteroidBelt:
+        gameMapID: Taypan1AsteroidBelt
+        posX: -3000
+        posY: -5001
+      Taypan2AsteroidBelt:
+        gameMapID: Taypan2AsteroidBelt
+        posX: 4049
+        posY: -2701
+      Marchbelt:
+        gameMapID: Marchbelt
+        posX: -7501
+        posY: 6299
+      Deepbelt:
+        gameMapID: Deepbelt
+        posX: -4801
+        posY: -601
+      FaintSignal:
+        gameMapID: FaintSignal
+        posX: 2999
+        posY: 1499
+      TribalScrapyard:
+        gameMapID: TribalScrapyard
+        posX: 4500
+        posY: -5401
+      AncientBattlefield:
+        gameMapID: AncientBattlefield
+        posX: 599
+        posY: 7499

@@ -424,39 +424,39 @@ faultyWaterproofing-damage-popup = Вода вызывает внутри вас
 trait-name-IPCFragileCircuits = Хрупкие Микросхемы
 trait-description-IPCFragileCircuits = Ваша система не переносит электрических перегрузок. Любой [color=orange]шоковый[/color] урон моментально отключает вас.
 fragileCircuits-kill-popup = { $name } отключился из-за короткого замыкания!
-trait-name-SuperiorRadiationShielding = Superior Radiation Shielding
+trait-name-SuperiorRadiationShielding = Превосходная радиационная защита
 trait-description-SuperiorRadiationShielding =
-    Your chassis has been outfitted with superior radiation shielding, protecting your circuitry from all but the most extreme radiation sources.
-    Your innate flat damage reduction to [color=yellow]Radiation[/color] is increased from [color=green]1[/color] to [color=blue]5[/color].
-trait-name-G2Chassis = G2 Chassis
+    Ваш корпус оснащён превосходной радиационной защитой, предохраняющей ваши схемы от всех, кроме самых экстремальных, источников радиации.
+    Ваше врождённое постоянное снижение урона от [color=yellow]Радиации[/color] увеличено с [color=green]1[/color] до [color=blue]5[/color].
+trait-name-G2Chassis = Корпус G2
 trait-description-G2Chassis =
-    Your chassis has been manufactured to military specifications.
-    You have an innate [color=blue]7%[/color] chance for incoming projectiles to deflect off of your armored hull.
-trait-name-HardenedCircuits = Hardened Circuits
+    Ваш корпус произведён по военным стандартам.
+    У вас есть врождённый [color=blue]7%[/color] шанс, что входящие снаряды рикошетят от вашей бронированной обшивки.
+trait-name-HardenedCircuits = Упрочнённые схемы
 trait-description-HardenedCircuits =
-    Your internal components have been reinforced with shock absorbing metal-foam.
-    You gain a [color=blue]20%[/color] resistance to explosive damage.
-    Your [color=red]weakness[/color] to [color=yellow]Shock[/color] has been inverted to a [color=green]resistance[/color]
-trait-name-CyberneticLeftLeg = Cybernetic Left Leg
+    Ваши внутренние компоненты усилены поглощающим удары металлическим пеноматериалом.
+    Вы получаете [color=blue]20%[/color] сопротивление взрывному урону.
+    Ваша [color=red]уязвимость[/color] к [color=yellow]Электрошоку[/color] превратилась в [color=green]сопротивление[/color].
+trait-name-CyberneticLeftLeg = Кибернетическая левая нога
 trait-description-CyberneticLeftLeg =
-    Your left leg has been replaced with a baseline cybernetic leg.
-    This does not cost any trait slot selections.
-trait-name-CyberneticRightLeg = Cybernetic Right Leg
+    Ваша левая нога заменена базовой кибернетической конечностью.
+    Этот признак не занимает слотов для черт.
+trait-name-CyberneticRightLeg = Кибернетическая правая нога
 trait-description-CyberneticRightLeg =
-    Your right leg has been replaced with a baseline cybernetic leg.
-    This does not cost any trait slot selections.
-trait-name-Dwarf = Dwarf
+    Ваша правая нога заменена базовой кибернетической конечностью.
+    Этот признак не занимает слотов для черт.
+trait-name-Dwarf = Дварф
 trait-description-Dwarf =
-    You are not just short and stout... You are a dwarf.
-    You get alcohol healing, you are resistant to poison, you also do not vomit when drunk.
-trait-name-Kobold = Kobold
+    Вы не просто низкорослый и крепкий... Вы дварф.
+    Вы получаете исцеление от алкоголя, вы устойчивы к ядам, вас также не тошнит в состоянии опьянения.
+trait-name-Kobold = Кобольд
 trait-description-Kobold =
-    You are not just short and stout... You are a kobold.
-    You get alcohol healing, you are resistant to poison, you also do not vomit when drunk.
-trait-name-ForkedTongue = Forked Tongue
-trait-description-ForkedTongue = You have a more developed forked tongue that allows you to track and distinguish objects by their scent.
-trait-name-StuntedSnout = Stunted Snout
-trait-description-StuntedSnout = Your sense of smell is stunted for one reason or another. You lack the ability to pick up scents.
+    Вы не просто низкорослый и крепкий... Вы кобольд.
+    Вы получаете исцеление от алкоголя, вы устойчивы к ядам, вас также не тошнит в состоянии опьянения.
+trait-name-ForkedTongue = Раздвоенный язык
+trait-description-ForkedTongue = У вас более развитый раздвоенный язык, позволяющий выслеживать и различать объекты по их запаху.
+trait-name-StuntedSnout = Неразвитый нос
+trait-description-StuntedSnout = Ваше обоняние по той или иной причине ослаблено. Вы не способны улавливать запахи.
 trait-name-Shell = Смена вида: Оболочка
 trait-description-Shell =
     Вы — высокоразвитый позитронный мозг внутри конструкции, состоящей из живой ткани поверх металлического эндоскелета.

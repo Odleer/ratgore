@@ -1,15 +1,15 @@
-command-list-langs-desc = List languages your current entity can speak at the current moment.
-command-list-langs-help = Usage: { $command }
-command-saylang-desc = Send a message in a specific language. To choose a language, you can use either the name of the language, or its position in the list of languages.
-command-saylang-help = Usage: { $command } <language id> <message>. Example: { $command } TauCetiBasic "Hello World!". Example: { $command } 1 "Hello World!"
-command-language-select-desc = Select the currently spoken language of your entity. You can use either the name of the language, or its position in the list of languages.
-command-language-select-help = Usage: { $command } <language id>. Example: { $command } 1. Example: { $command } TauCetiBasic
-command-language-spoken = Spoken:
-command-language-understood = Understood:
-command-language-current-entry = { $id }. { $language } - { $name } (current)
+command-list-langs-desc = Вывести список языков, на которых ваша текущая сущность может говорить в данный момент.
+command-list-langs-help = Использование: { $command }
+command-saylang-desc = Отправить сообщение на определённом языке. Для выбора языка можно использовать либо его название, либо его позицию в списке языков.
+command-saylang-help = Использование: { $command } <id языка> <сообщение>. Пример: { $command } TauCetiBasic "Привет, мир!". Пример: { $command } 1 "Привет, мир!"
+command-language-select-desc = Выбрать текущий разговорный язык для вашей сущности. Можно использовать либо название языка, либо его позицию в списке языков.
+command-language-select-help = Использование: { $command } <id языка>. Пример: { $command } 1. Пример: { $command } TauCetiBasic
+command-language-spoken = Говорит:
+command-language-understood = Понимает:
+command-language-current-entry = { $id }. { $language } - { $name } (текущий)
 command-language-entry = { $id }. { $language } - { $name }
-command-language-invalid-number = The language number must be between 0 and { $total }. Alternatively, use the language name.
-command-language-invalid-language = The language { $id } does not exist or you cannot speak it.
+command-language-invalid-number = Номер языка должен быть от 0 до { $total }. Либо используйте название языка.
+command-language-invalid-language = Язык { $id } не существует или ваша сущность не может на нём говорить.
 
 # toolshed
 
