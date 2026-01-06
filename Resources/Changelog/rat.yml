@@ -64,3 +64,10 @@ Entries:
   id: 9
   time: '2026-01-05T13:41:21Z'
   url: null
+- author: Odleer
+  changes:
+    - message: Локаль, фиксы и подготовку к запуску
+      type: Tweak
+  id: 10
+  time: '2026-01-06T11:22:25Z'
+  url: null
