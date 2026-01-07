@@ -440,6 +440,20 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
         var priceMult = EnsureComp<ShipPriceMultiplierComponent>(shuttle.Owner);
         priceMult.priceMultiplier = 0.80f;
 
+        var sellValue = (int)(_pricing.AppraiseGrid(shuttle.Owner) * 0.8f);
+
+        RefreshState(
+            uid,
+            bank.Balance,
+            true,
+            name,
+            sellValue,
+            true,
+            (ShipyardConsoleUiKey) args.UiKey
+        );
+
+
+
         EntityUid? shuttleStation = null;
         // setting up any stations if we have a matching game map prototype to allow late joins directly onto the vessel
         if (_prototypeManager.TryIndex<GameMapPrototype>(vessel.ID, out var stationProto))
@@ -488,10 +502,6 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
 
 
 
-
-        int sellValue = 0;
-        if (TryComp<ShuttleDeedComponent>(product, out var deed))
-            sellValue = (int) _pricing.AppraiseGrid((EntityUid) (deed?.ShuttleUid!));
 
         EnsureComp<ShipSpeedByMassAdjusterComponent>(shuttle.Owner);
         if (TryComp<DynamicCodeHolderComponent>(shuttle.Owner, out var shuttleCodes))
@@ -703,6 +713,37 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
             _chat.TrySendInGameICMessage(uid, Loc.GetString("shipyard-console-leaving", ("owner", player!), ("vessel", name!), ("player", seller)), InGameICChatType.Speak, true);
         }
     }
+
+    private void ForceRefreshUi(
+        EntityUid console,
+        EntityUid shuttle,
+        string shipName,
+        ShipyardConsoleUiKey uiKey)
+    {
+        if (!TryComp<ActivatableUIComponent>(console, out var uiComp))
+            return;
+
+        var actors = _ui.GetActors(console, uiKey);
+
+        foreach (var actor in actors)
+        {
+            if (!TryComp<BankAccountComponent>(actor, out var bank))
+                continue;
+
+            var sellValue = GetShuttleSellValue(shuttle, uiKey);
+
+            RefreshState(
+                console,
+                bank.Balance,
+                true,
+                shipName,
+                sellValue,
+                true,
+                uiKey
+            );
+        }
+    }
+
 
     private void PlayDenySound(EntityUid uid, ShipyardConsoleComponent component)
     {
