@@ -28,24 +28,24 @@ ui-options-chatstack-triple = Три последних сообщения
 
 ## Меню "Звук"
 
-ui-options-master-volume = Основная громкость:
-ui-options-midi-volume = MIDI (Инструменты) громкость:
+ui-options-master-volume = Общая громкость:
+ui-options-midi-volume = Громкость MIDI (инструментов):
 ui-options-combat-music-volume = Громкость боевой музыки:
-ui-options-ambient-music-volume = Громкость эмбиента:
-ui-options-ambience-volume = Громкость окружения:
-ui-options-lobby-volume = Громкость лобби и окончания раунда:
+ui-options-ambient-music-volume = Громкость фоновой музыки:
+ui-options-ambience-volume = Громкость окружающих звуков:
+ui-options-lobby-volume = Громкость лобби и конца раунда:
 ui-options-interface-volume = Громкость интерфейса:
-ui-options-ambience-max-sounds = Кол-во одновременных звуков окружения:
+ui-options-ambience-max-sounds = Макс. одновременных окружающих звуков:
 ui-options-announcer-volume = Громкость объявлений:
 ui-options-combat-music = Боевая музыка
 ui-options-lobby-music = Музыка в лобби
 ui-options-restart-sounds = Звуки перезапуска раунда
 ui-options-event-music = Музыка событий
 ui-options-announcer-disable-multiple-sounds = Наложенные объявления
-ui-options-announcer-disable-multiple-sounds-tooltip = Some announcements will not sound right, this setting isn't recommended
-ui-options-admin-sounds = Музыка админов
+ui-options-announcer-disable-multiple-sounds-tooltip = Некоторые объявления могут звучать некорректно, эта настройка не рекомендуется
+ui-options-admin-sounds = Воспроизводить звуки администраторов
+ui-options-bwoink-sound = Воспроизводить звук уведомления AHelp
 ui-options-volume-label = Громкость
-ui-options-volume-percent = { TOSTRING($volume, "P0") }
 
 ## Меню "Графика"
 

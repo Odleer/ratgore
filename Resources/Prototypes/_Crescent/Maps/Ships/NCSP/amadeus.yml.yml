@@ -3,8 +3,8 @@
 #
 - type: vessel
   id: Amadeus
-  name: SAW Amadeus
-  description: A shielded, lightly-armed defense corvette.
+  name: ПК Амедус
+  description: Защищенный, легковооруженный оборонительный корвет.
   price: 125000
   category: Medium
   group: None
@@ -12,7 +12,7 @@
 
 - type: gameMap
   id: Amadeus
-  mapName: 'SAW Amadeus'
+  mapName: 'Амедус'
   mapPath: /Maps/_Crescent/Shuttles/NCSP/amadeus.yml
   minPlayers: 0
   stations:
@@ -24,7 +24,7 @@
             sprite: _Crescent/ShipIcons/ifficons.rsi
             state: corvette
         - type: StationNameSetup
-          mapNameTemplate: 'SAW Amadeus {1}'
+          mapNameTemplate: 'Амедус {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

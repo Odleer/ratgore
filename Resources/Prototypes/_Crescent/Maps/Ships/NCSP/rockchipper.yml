@@ -3,8 +3,8 @@
 
 - type: vessel
   id: Rockchipper
-  name: SAW Rockchipper
-  description: A SAW Retrofit of wrecked termites. Made for intense mining operations.
+  name: ПК Кабитель
+  description: Шаттл собранный из разрушенных "Термитов". Создана для интенсивных горных работ.
   price: 19000
   category: Small
   group: None
@@ -12,7 +12,7 @@
 
 - type: gameMap
   id: Rockchipper
-  mapName: 'SAW Rockchipper'
+  mapName: 'ПК Кабитель'
   mapPath: /Maps/_Crescent/Shuttles/NCSP/rockchipper.yml
   minPlayers: 0
   stations:
@@ -24,7 +24,7 @@
             sprite: _Crescent/ShipIcons/ifficons.rsi
             state: corvette
         - type: StationNameSetup
-          mapNameTemplate: 'SAW Rockchipper {1}'
+          mapNameTemplate: 'ПК Кабитель {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

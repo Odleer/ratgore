@@ -1,7 +1,7 @@
 - type: vessel
   id: Probe
-  name: SHI Probe
-  description: The SHI Probe is a cost-effective research ship designed for short-term deployment.
+  name: СТП Зонд
+  description: СТП "Зонд" — экономичное исследовательское судно, предназначенное для краткосрочного развертывания.
   price: 20000
   category: Small
   group: None
@@ -9,7 +9,7 @@
 
 - type: gameMap
   id: Probe
-  mapName: 'SHI Probe'
+  mapName: 'СТП Зонд'
   mapPath: /Maps/_Crescent/Shuttles/SHI/probe.yml
   minPlayers: 0
   stations:
@@ -21,7 +21,7 @@
             sprite: _Crescent/ShipIcons/ifficons.rsi
             state: industrial
         - type: StationNameSetup
-          mapNameTemplate: 'SHI Probe {1}'
+          mapNameTemplate: 'СТП Зонд {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

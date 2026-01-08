@@ -3,8 +3,8 @@
 #
 - type: vessel
   id: Cleaver
-  name: NCSP Cleaver
-  description: A heavy Syndicate fighter.
+  name: КВСТ Клевер
+  description: Тяжелый истребитель Синдиката.
   price: 50000 #50000 appraisegrid
   category: Medium
   group: None
@@ -12,7 +12,7 @@
 
 - type: gameMap
   id: Cleaver
-  mapName: 'NCSP Cleaver'
+  mapName: 'КВСТ Клевер'
   mapPath: /Maps/_Crescent/Shuttles/NCSP/cleaver.yml
   minPlayers: 0
   stations:
@@ -24,7 +24,7 @@
             sprite: _Crescent/ShipIcons/ifficons.rsi
             state: corvette
         - type: StationNameSetup
-          mapNameTemplate: 'GSC Cleaver {1}'
+          mapNameTemplate: 'МГ Клевер {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

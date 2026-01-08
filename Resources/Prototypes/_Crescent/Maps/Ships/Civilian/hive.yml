@@ -3,11 +3,11 @@
 
 - type: vessel
   id: Hive
-  name: TS Hive
+  name: ШТ Улей
   description: |
-    The Hive is made from the remains of a derelict superfreighter, what was once it's cargobays now serving has hangars for it's complement of fighters.
-    LOADOUT: 1x 120mm SHI Cannon, 2x 48mm Sumitomo Missiles, 2x 90mm Automortars, 2x 20x135mm PDT, 6x Small Ballistic Hardpoints
-    MINIMUM CREW: 1x Captain, 1x Gunner/Loader, 4x Fighter Pilots
+    "Улей" создан из остатков заброшенного супергрузовика; то, что когда-то было его грузовыми отсеками, теперь служит ангарами для его парка истребителей.
+    ВООРУЖЕНИЕ: 1x 120-мм пушка СТП, 2x 48-мм ракеты "Сумитомо", 2x 90-мм автоматических миномета, 2x 20x135-мм скорострельных орудия ПВО, 6x Малые баллистические точки крепления
+    МИНИМАЛЬНЫЙ ЭКИПАЖ: 1x Капитан, 1x Стрелок/Заряжающий, 4x Пилота истребителей
   price: 90000
   category: Large
   group: Scrap
@@ -15,7 +15,7 @@
 
 - type: gameMap
   id: Hive
-  mapName: 'Hive'
+  mapName: 'Улей'
   mapPath: /Maps/_Crescent/Shuttles/Civilian/hive.yml
   minPlayers: 0
   stations:
@@ -27,7 +27,7 @@
             sprite: _Crescent/ShipIcons/ifficons.rsi
             state: battleship
         - type: StationNameSetup
-          mapNameTemplate: 'Hive {1}'
+          mapNameTemplate: 'Улей {1}'
           nameGenerator:
            !type:NanotrasenNameGenerator
             prefixCreator: '14'

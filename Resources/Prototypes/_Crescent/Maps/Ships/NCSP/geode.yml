@@ -3,8 +3,8 @@
 #
 - type: vessel
   id: Geode
-  name: SAW Geode
-  description: A lightly shielded, broadside corvette.
+  name: ПК Жеода
+  description: Легкобронированный корвет с бортовым залпом.
   price: 82000
   category: Medium
   group: None
@@ -12,7 +12,7 @@
 
 - type: gameMap
   id: Geode
-  mapName: 'SAW Geode'
+  mapName: 'ПК Жеода'
   mapPath: /Maps/_Crescent/Shuttles/NCSP/geode.yml
   minPlayers: 0
   stations:
@@ -24,7 +24,7 @@
             sprite: _Crescent/ShipIcons/ifficons.rsi
             state: corvette
         - type: StationNameSetup
-          mapNameTemplate: 'SAW Geode {1}'
+          mapNameTemplate: 'ПК Жеода {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

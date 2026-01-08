@@ -3,8 +3,8 @@
 #
 - type: vessel
   id: Ouroboros
-  name: NCSP Ouroboros
-  description: A Syndicate stealth carrier.
+  name: КВСТ Уроборос
+  description: Скрытный авианосец Синдиката.
   price: 65000 #65000 appraisegrid
   category: Medium
   group: None
@@ -12,7 +12,7 @@
 
 - type: gameMap
   id: Ouroboros
-  mapName: 'NCSP Ouroboros'
+  mapName: 'КВСТ Уроборос'
   mapPath: /Maps/_Crescent/Shuttles/NCSP/ouroboros.yml
   minPlayers: 0
   stations:
@@ -24,7 +24,7 @@
             sprite: _Crescent/ShipIcons/ifficons.rsi
             state: frigate
         - type: StationNameSetup
-          mapNameTemplate: 'GSC Ouroboros {1}'
+          mapNameTemplate: 'МГ Уроборос {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

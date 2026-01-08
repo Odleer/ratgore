@@ -3,8 +3,8 @@
 #
 - type: vessel
   id: Shanty
-  name: SAW Shanty
-  description: A salvaged Syndicate cargopod.
+  name: ПК Лачужка
+  description: Трофейный грузовой модуль Синдиката.
   price: 31000
   category: Small
   group: None
@@ -12,7 +12,7 @@
 
 - type: gameMap
   id: Shanty
-  mapName: 'SAW Shanty'
+  mapName: 'ПК Лачужка'
   mapPath: /Maps/_Crescent/Shuttles/NCSP/Shanty.yml
   minPlayers: 0
   stations:
@@ -24,7 +24,7 @@
             sprite: _Crescent/ShipIcons/ifficons.rsi
             state: industrial
         - type: StationNameSetup
-          mapNameTemplate: 'SAW Shanty {1}'
+          mapNameTemplate: 'ПК Лачужка {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

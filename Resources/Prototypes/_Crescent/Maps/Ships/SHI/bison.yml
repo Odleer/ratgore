@@ -1,7 +1,7 @@
 - type: vessel
   id: Bison
-  name: SHI Bison
-  description: A heavy blockade runner, the Bison primarily serves as a backliner for the CorpSec team, and as a smuggler vehicle for prospective freight-runners.
+  name: СТП Бизон
+  description: Тяжелый блокадопрорыватель, "Бизон" в основном служит кораблем задней линии для команды Корпоративной Безопасности, а также транспортным средством для контрабандистов-перевозчиков.
   price: 61000
   category: Medium
   group: None
@@ -9,7 +9,7 @@
 
 - type: gameMap
   id: Bison
-  mapName: 'SHI Bison'
+  mapName: 'СТП Бизон'
   mapPath: /Maps/_Crescent/Shuttles/SHI/buffalo.yml
   minPlayers: 0
   stations:
@@ -21,7 +21,7 @@
             sprite: _Crescent/ShipIcons/ifficons.rsi
             state: frigate
         - type: StationNameSetup
-          mapNameTemplate: 'CSEC Bison {1}'
+          mapNameTemplate: 'СКБ Бизон {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

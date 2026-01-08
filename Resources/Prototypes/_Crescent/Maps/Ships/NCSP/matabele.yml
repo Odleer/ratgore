@@ -3,8 +3,8 @@
 #
 - type: vessel
   id: Matabele
-  name: TFSC Matabele
-  description: A stealth-capable ambulance pod.
+  name: КВСТ Матабел
+  description: Скрытная капсула скорой помощи.
   price: 45000
   category: Small
   group: None
@@ -12,7 +12,7 @@
 
 - type: gameMap
   id: Matabele
-  mapName: 'TFSC Matabele'
+  mapName: 'КВСТ Матабел'
   mapPath: /Maps/_Crescent/Shuttles/NCSP/matabele.yml
   minPlayers: 0
   stations:
@@ -24,7 +24,7 @@
             sprite: _Crescent/ShipIcons/ifficons.rsi
             state: corvette
         - type: StationNameSetup
-          mapNameTemplate: 'IPM Matabele {1}'
+          mapNameTemplate: 'БИ Матабел {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

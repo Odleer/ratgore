@@ -1,6 +1,6 @@
 - type: gameMap
   id: Deepbelt
-  mapName: 'The "Deepbelt"'
+  mapName: 'Пояс "Дип"'
   mapPath: /Maps/_Crescent/Explorables/deepbelt.yml
   minPlayers: 0
   stations:
@@ -13,4 +13,4 @@
             state: asteroid
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'The "Deepbelt"'
+          mapNameTemplate: 'Пояс "Дип"'

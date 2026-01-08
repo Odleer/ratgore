@@ -3,11 +3,11 @@
 
 - type: vessel
   id: Hammerhead
-  name: PTA Hammerhead
+  name: ОПТ Молотоголов
   description: |
-    Common warship designed by Pang Tai Arms, intended as a generalized frontliner vessel, having medical, cargo, mining, and security modules.
-    LOADOUT: 6x 20x135mm PDT, 2x 100m "Lancer" Missile Lanuchers
-    MINIMUM CREW: 1x Pilot, 1x Gunner
+    Распространенный боевой корабль, разработанный "Пан Тай", задуманный как универсальный корабль передовой линии, имеющий медицинские, грузовые, добывающие и охранные модули.
+    ВООРУЖЕНИЕ: 6x 20x135-мм скорострельных орудий ПВО, 2x 100-мм ракетные установки "Лансер"
+    МИНИМАЛЬНЫЙ ЭКИПАЖ: 1x Пилот, 1x Стрелок
   price: 160000
   category: Large
   group: Civilian

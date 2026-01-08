@@ -3,8 +3,8 @@
 #
 - type: vessel
   id: Scabrak
-  name: SAW Scabrak
-  description: Medium-sized mining barge
+  name: ПК Скабрак
+  description: Среднеразмерная добывающая баржа.
   price: 72000
   category: Medium
   group: None
@@ -12,7 +12,7 @@
 
 - type: gameMap
   id: Scabrak
-  mapName: 'SAW Scabrak'
+  mapName: 'ПК Скабрак'
   mapPath: /Maps/_Crescent/Shuttles/NCSP/scabrak.yml
   minPlayers: 0
   stations:
@@ -24,7 +24,7 @@
             sprite: _Crescent/ShipIcons/ifficons.rsi
             state: industrial
         - type: StationNameSetup
-          mapNameTemplate: 'SAW Scabrak {1}'
+          mapNameTemplate: 'ПК Скабрак {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

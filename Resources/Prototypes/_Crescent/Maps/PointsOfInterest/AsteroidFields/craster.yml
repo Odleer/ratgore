@@ -1,6 +1,6 @@
 - type: gameMap
   id: Craster
-  mapName: 'Crasters Grave'
+  mapName: 'Могила Крастерса'
   mapPath: /Maps/_Crescent/Explorables/craster.yml
   minPlayers: 0
   stations:
@@ -13,4 +13,4 @@
             state: asteroid
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Crasters Grave'
+          mapNameTemplate: 'Могила Крастерса'

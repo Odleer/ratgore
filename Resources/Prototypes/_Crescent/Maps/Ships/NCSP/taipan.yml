@@ -3,8 +3,8 @@
 #
 - type: vessel
   id: Taipan
-  name: TFSC Taipan
-  description: A multipurpose, armed corvette.
+  name: КВСТ Тайпан
+  description: Многоцелевой вооруженный корвет.
   price: 60000
   category: Medium
   group: None
@@ -12,7 +12,7 @@
 
 - type: gameMap
   id: Taipan
-  mapName: 'TFSC Taipan'
+  mapName: 'КВСТ Тайпан'
   mapPath: /Maps/_Crescent/Shuttles/NCSP/taipan.yml
   minPlayers: 0
   stations:
@@ -24,7 +24,7 @@
             sprite: _Crescent/ShipIcons/ifficons.rsi
             state: frigate
         - type: StationNameSetup
-          mapNameTemplate: 'CD Taipan {1}'
+          mapNameTemplate: 'ТК Тайпан {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

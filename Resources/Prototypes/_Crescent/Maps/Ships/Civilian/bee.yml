@@ -3,11 +3,11 @@
 
 - type: vessel
   id: Bee
-  name: TS Bee
+  name: ШТ Пчела
   description: |
-    A variant of the Wasp, the Bee carries a 180mm Idna Launcher with two torpedoes pre-loaded, requiring frequent reloading for continuous use. It is wise to consider hit-and-run tactics with this fighter.
-    LOADOUT: 1x 180mm Idna Torpedo Launcher.
-    MINIMUM CREW: 1x Brave Pilot
+    Вариант "Осы", "Пчела" несет 180-мм пусковую установку "Идна" с двумя предзаряженными торпедами, требующую частой перезарядки для непрерывного использования. С этим истребителем разумно применять тактику "ударил-убежал".
+    ВООРУЖЕНИЕ: 1x 180-мм торпедная пусковая установка "Идна".
+    МИНИМАЛЬНЫЙ ЭКИПАЖ: 1x Храбрый пилот
   price: 12000
   category: Small
   group: Scrap
@@ -15,7 +15,7 @@
 
 - type: gameMap
   id: Bee
-  mapName: 'Bee'
+  mapName: 'Пчела'
   mapPath: /Maps/_Crescent/Shuttles/Civilian/bee.yml
   minPlayers: 0
   stations:
@@ -27,7 +27,7 @@
             sprite: _Crescent/ShipIcons/ifficons.rsi
             state: fighter
         - type: StationNameSetup
-          mapNameTemplate: 'Bee {1}'
+          mapNameTemplate: 'Пчела {1}'
           nameGenerator:
            !type:NanotrasenNameGenerator
             prefixCreator: '14'

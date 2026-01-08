@@ -3,8 +3,8 @@
 #
 - type: vessel
   id: Caracal
-  name: SAW Caracal
-  description: Retroffited shipbreaker fighter platform.
+  name: ПК Каракал
+  description: Модернизированная платформа кораблекрушителя-истребителя.
   price: 60000
   category: Small
   group: None
@@ -12,7 +12,7 @@
 
 - type: gameMap
   id: Caracal
-  mapName: 'SAW Caracal'
+  mapName: 'ПК Каракал'
   mapPath: /Maps/_Crescent/Shuttles/NCSP/caracal.yml
   minPlayers: 0
   stations:
@@ -20,7 +20,7 @@
       stationProto: StandardCrescentVessel
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'SAW Caracal {1}'
+          mapNameTemplate: 'ПК Каракал {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

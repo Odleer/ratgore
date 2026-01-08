@@ -3,8 +3,8 @@
 #
 - type: vessel
   id: Eradicator
-  name: NCSP Eradicator
-  description: A Syndicate stealth destroyer.
+  name: КВСТ Дикатор
+  description: Скрытный эсминец Синдиката.
   price: 115000 #115000 appraisegrid
   category: Medium
   group: None
@@ -12,7 +12,7 @@
 
 - type: gameMap
   id: Eradicator
-  mapName: 'NCSP Eradicator'
+  mapName: 'КВСТ Дикатор'
   mapPath: /Maps/_Crescent/Shuttles/NCSP/eradicator.yml
   minPlayers: 0
   stations:
@@ -24,7 +24,7 @@
             sprite: _Crescent/ShipIcons/ifficons.rsi
             state: frigate
         - type: StationNameSetup
-          mapNameTemplate: 'GSC Eradicator {1}'
+          mapNameTemplate: 'МГ Дикатор {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

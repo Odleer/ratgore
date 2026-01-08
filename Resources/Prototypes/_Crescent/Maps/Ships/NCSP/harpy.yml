@@ -3,8 +3,8 @@
 #
 - type: vessel
   id: Harpy
-  name: TFSC Harpy
-  description: A medium-sized rocket corvette with an onboard clinic.
+  name: КВСТ Гарпия
+  description: Ракетный корвет среднего размера со стационарной клиникой на борту.
   price: 75000
   category: Medium
   group: None
@@ -12,7 +12,7 @@
 
 - type: gameMap
   id: Harpy
-  mapName: 'TFSC Harpy'
+  mapName: 'КВСТ Гарпия'
   mapPath: /Maps/_Crescent/Shuttles/NCSP/harpy.yml
   minPlayers: 0
   stations:
@@ -24,7 +24,7 @@
             sprite: _Crescent/ShipIcons/ifficons.rsi
             state: corvette
         - type: StationNameSetup
-          mapNameTemplate: 'IPM Harpy {1}'
+          mapNameTemplate: 'БИ Гарпия {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

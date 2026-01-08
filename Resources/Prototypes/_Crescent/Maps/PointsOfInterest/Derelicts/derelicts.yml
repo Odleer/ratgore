@@ -1,6 +1,6 @@
 - type: gameMap
   id: FaintSignal
-  mapName: 'Faint Signal'
+  mapName: 'Слабый Сигнал'
   mapPath: /Maps/_NF/POI/tinnia.yml
   minPlayers: 0
   stations:
@@ -13,11 +13,11 @@
             state: pointofinterest
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Faint Signal'
+          mapNameTemplate: 'Слабый Сигнал'
 
 - type: gameMap
   id: StandedShip
-  mapName: 'Stranded Ship'
+  mapName: 'Застрявший шаттл'
   mapPath: /Maps/_Crescent/Explorables/stranded.yml
   minPlayers: 0
   stations:
@@ -30,11 +30,11 @@
             state: pointofinterest
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Stranded Ship'
+          mapNameTemplate: 'Застрявший шаттл'
 
 - type: gameMap
   id: Graveyard
-  mapName: 'The Graveyard'
+  mapName: 'Кладбище Кораблей'
   mapPath: /Maps/_Crescent/Explorables/zhipovwreck.yml
   minPlayers: 0
   stations:
@@ -47,11 +47,11 @@
             state: pointofinterest
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'The Graveyard'
+          mapNameTemplate: 'Кладбище Кораблей'
 
 - type: gameMap
   id: Fighter1
-  mapName: 'Destroyed Fighter'
+  mapName: 'Уничтоженный Истребитель'
   mapPath: /Maps/_Crescent/Explorables/ruinedfightereast.yml
   minPlayers: 0
   stations:
@@ -64,11 +64,11 @@
             state: pointofinterest
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Destroyed Fighter'
+          mapNameTemplate: 'Уничтоженный Истребитель'
 
 - type: gameMap
   id: Fighter2
-  mapName: 'Destroyed Fighter'
+  mapName: 'Уничтоженный Истребитель'
   mapPath: /Maps/_Crescent/Explorables/ruinedfighterwest.yml
   minPlayers: 0
   stations:
@@ -81,11 +81,11 @@
             state: pointofinterest
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Destroyed Fighter'
+          mapNameTemplate: 'Уничтоженный Истребитель'
 
 - type: gameMap
   id: FogwreckedDerelict
-  mapName: 'Fogwrecked Derelict'
+  mapName: 'Заблудившийся в Тумане'
   mapPath: /Maps/_Crescent/Explorables/fogexplorer.yml
   minPlayers: 0
   stations:
@@ -98,7 +98,7 @@
             state: pointofinterest
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Fogwrecked Derelict'
+          mapNameTemplate: 'Заблудившийся в Тумане'
 
 - type: gameMap
   id: SolarSailorDerelict
@@ -119,7 +119,7 @@
 
 - type: gameMap
   id: ImperialHaulerWreck
-  mapName: 'Imperial Hauler Wreck'
+  mapName: 'Обломки Имперского Шаттла'
   mapPath: /Maps/_Crescent/Explorables/impwreck.yml
   minPlayers: 0
   stations:
@@ -136,7 +136,7 @@
 
 - type: gameMap
   id: DerelictWaystation
-  mapName: 'Derelict Waystation'
+  mapName: 'Заброшенная Станция'
   mapPath: /Maps/_Crescent/Explorables/hayeswreck.yml
   minPlayers: 0
   stations:
@@ -149,11 +149,11 @@
             state: pointofinterest
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Derelict Waystation'
+          mapNameTemplate: 'Заброшенная Станция'
 
 - type: gameMap
   id: TribalScrapyard
-  mapName: 'Tribal Scrapyard'
+  mapName: 'Свалка Кораблей'
   mapPath: /Maps/_Crescent/Explorables/tribalscrapyard.yml
   minPlayers: 0
   stations:
@@ -166,11 +166,11 @@
             state: pointofinterest
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Tribal Scrapyard'
+          mapNameTemplate: 'Свалка Кораблей'
           
 - type: gameMap
   id: AncientBattlefield
-  mapName: 'Ancient Battlefield'
+  mapName: 'Древнее Поле Боя'
   mapPath: /Maps/_Crescent/Explorables/ancientbattlefield.yml
   minPlayers: 0
   stations:
@@ -183,4 +183,4 @@
             state: pointofinterest
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Ancient Battlefield'
+          mapNameTemplate: 'Древнее Поле Боя'

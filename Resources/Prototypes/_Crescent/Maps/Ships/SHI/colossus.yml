@@ -1,7 +1,7 @@
 - type: vessel
   id: colossus
-  name: SHI Colossus
-  description: The SHI Colossus is the mother of all cargo freighters.
+  name: СТП Колосс
+  description: СТП "Колосс" — мать всех грузовых перевозчиков.
   price: 125000
   category: Large
   group: None
@@ -9,7 +9,7 @@
 
 - type: gameMap
   id: colossus
-  mapName: 'SHI Colossus'
+  mapName: 'СТП Колосс'
   mapPath: /Maps/_Crescent/Shuttles/SHI/colossus.yml
   minPlayers: 0
   stations:
@@ -21,7 +21,7 @@
             sprite: _Crescent/ShipIcons/ifficons.rsi
             state: industrial
         - type: StationNameSetup
-          mapNameTemplate: 'SHI Colossus {1}'
+          mapNameTemplate: 'СТП Колосс {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

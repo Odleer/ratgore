@@ -3,8 +3,8 @@
 #
 - type: vessel
   id: Hulk
-  name: IPM Hulk
-  description: A mobile hospital on thrusters. Quite heavy, yet underarmed.
+  name: БИ Халк
+  description: Мобильный госпиталь на двигателях. Довольно тяжелый, но слабовооруженный.
   price: 175000
   category: Large
   group: None
@@ -12,7 +12,7 @@
 
 - type: gameMap
   id: Hulk
-  mapName: 'IPM Hulk'
+  mapName: 'БИ Халк'
   mapPath: /Maps/_Crescent/Shuttles/NCSP/hulk.yml
   minPlayers: 0
   stations:
@@ -24,7 +24,7 @@
             sprite: _Crescent/ShipIcons/ifficons.rsi
             state: dreadnought
         - type: StationNameSetup
-          mapNameTemplate: 'IPM Hulk {1}'
+          mapNameTemplate: 'БИ Халк {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

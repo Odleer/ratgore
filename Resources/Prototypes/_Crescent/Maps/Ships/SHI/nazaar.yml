@@ -1,7 +1,7 @@
 - type: vessel
   id: Nazaar
-  name: CSEC Nazaar
-  description: A CorpSec patrol gunboat.
+  name: СКБ Назар
+  description: Патрульный канонерский катер Корпоративной Безопасности.
   price: 27500
   category: Small
   group: None
@@ -9,7 +9,7 @@
 
 - type: gameMap
   id: Nazaar
-  mapName: 'CSEC Nazaar'
+  mapName: 'СКБ Назар'
   mapPath: /Maps/_Crescent/Shuttles/SHI/nazaar.yml
   minPlayers: 0
   stations:
@@ -21,7 +21,7 @@
             sprite: _Crescent/ShipIcons/ifficons.rsi
             state: fighter
         - type: StationNameSetup
-          mapNameTemplate: 'CSEC Nazaar {1}'
+          mapNameTemplate: 'СКБ Назар {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

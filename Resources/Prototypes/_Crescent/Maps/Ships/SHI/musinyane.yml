@@ -1,7 +1,7 @@
 - type: vessel
   id: Musinyane
-  name: SHI Musinyane
-  description: A CorpSec patrol corvette.
+  name:  СТП Мяне
+  description: Патрульный корвет Корпоративной Безопасности.
   price: 75000
   category: Medium
   group: None
@@ -9,7 +9,7 @@
 
 - type: gameMap
   id: Musinyane
-  mapName: 'SHI Musinyane'
+  mapName: 'СТП Мяне'
   mapPath: /Maps/_Crescent/Shuttles/SHI/musinyane.yml
   minPlayers: 0
   stations:
@@ -21,7 +21,7 @@
             sprite: _Crescent/ShipIcons/ifficons.rsi
             state: corvette
         - type: StationNameSetup
-          mapNameTemplate: 'CSEC Musinyane {1}'
+          mapNameTemplate: 'СКБ Мяне {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

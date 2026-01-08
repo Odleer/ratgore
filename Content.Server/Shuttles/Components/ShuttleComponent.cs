@@ -21,9 +21,9 @@ namespace Content.Server.Shuttles.Components
         /// Maximum velocity assuming unupgraded, tier 1 thrusters
         /// </summary>
         [ViewVariables(VVAccess.ReadWrite), DataField]
-        public float BaseMaxLinearVelocity = 60f;
+        public float BaseMaxLinearVelocity = 20f;
 
-        public const float MaxAngularVelocity = 4f;
+        public const float MaxAngularVelocity = 6f;
 
         /// <summary>
         /// The cached thrust available for each cardinal direction

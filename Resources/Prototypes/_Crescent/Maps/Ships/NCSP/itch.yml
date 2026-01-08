@@ -3,8 +3,8 @@
 #
 - type: vessel
   id: Itch
-  name: GSC Itch
-  description: A small stealth fighter.
+  name: МГ Зудень
+  description: Маленький скрытный истребитель.
   price: 25000 #23000 appraisegrid
   category: Small
   group: None
@@ -12,7 +12,7 @@
 
 - type: gameMap
   id: Itch
-  mapName: 'GSC Itch'
+  mapName: 'МГ Зудень'
   mapPath: /Maps/_Crescent/Shuttles/NCSP/itch.yml
   minPlayers: 0
   stations:
@@ -24,7 +24,7 @@
             sprite: _Crescent/ShipIcons/ifficons.rsi
             state: fighter
         - type: StationNameSetup
-          mapNameTemplate: 'GSC Itch {1}'
+          mapNameTemplate: 'МГ Зудень {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'
