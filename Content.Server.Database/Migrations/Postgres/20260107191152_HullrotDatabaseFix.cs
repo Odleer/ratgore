@@ -2,10 +2,10 @@
 
 #nullable disable
 
-namespace Content.Server.Database.Migrations.Sqlite
+namespace Content.Server.Database.Migrations.Postgres
 {
     /// <inheritdoc />
-    public partial class hullrotDbPort : Migration
+    public partial class HullrotDatabaseFix : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -13,14 +13,14 @@ namespace Content.Server.Database.Migrations.Sqlite
             migrationBuilder.AddColumn<long>(
                 name: "bank_balance",
                 table: "profile",
-                type: "INTEGER",
+                type: "bigint",
                 nullable: false,
                 defaultValue: 0L);
 
             migrationBuilder.AddColumn<string>(
                 name: "faction",
                 table: "profile",
-                type: "TEXT",
+                type: "text",
                 nullable: false,
                 defaultValue: "");
         }
