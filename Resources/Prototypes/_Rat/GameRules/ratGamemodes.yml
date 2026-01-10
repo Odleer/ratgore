@@ -29,11 +29,11 @@
         posY: 6599
         IFFColor: IndianRed
         IFFFaction: TFSC
-#      GliessSanto:
-#        gameMapID: GliessSanto
-#        posX: 0
-#        posY: 0
-#        IFFColor: White
+      GliessSanto:
+        gameMapID: GliessSanto
+        posX: 0
+        posY: 0
+        IFFColor: White
       Tatsumoto:
         gameMapID: Tatsumoto
         posX: 3000
