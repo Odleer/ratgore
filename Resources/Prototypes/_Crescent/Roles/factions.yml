@@ -78,7 +78,7 @@
     сохранения корпоративных интересов» и «Управления конкурентным партнёрством».
   color: "#9FED58"
   weight: 5
-  enabled: true
+  enabled: false
   icon:
     sprite: /Textures/_Crescent/faction_icons.rsi
     state: shi
@@ -106,7 +106,7 @@
     Но с уничтожением Либерталия эти группы разошлись ещё дальше, часто воюя друг с другом.
   color: "#9FED58"
   weight: 6
-  enabled: true
+  enabled: false
   icon:
     sprite: /Textures/_Crescent/faction_icons.rsi
     state: tfsc
