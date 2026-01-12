@@ -183,18 +183,6 @@
   - type: Clothing
     sprite: Clothing/Belt/assault.rsi
   - type: Storage
-    whitelist:
-      tags:
-      - CigPack
-      - Taser
-      components:
-      - Stunbaton
-      - FlashOnTrigger
-      - SmokeOnTrigger
-      - Flash
-      - Handcuff
-      - BallisticAmmoProvider
-      - Ammo
   - type: ItemMapper
     mapLayers:
       flashbang:
@@ -496,29 +484,6 @@
   - type: ExplosionResistance
     damageCoefficient: 0.9
   - type: Storage
-    whitelist:
-      tags:
-      - CigPack
-      - Taser
-      - SecBeltEquip
-      - Radio
-      - Sidearm
-      - MagazinePistol
-      - MagazineMagnum
-      - CombatKnife
-      - Truncheon
-      components:
-      - Stunbaton
-      - FlashOnTrigger
-      - SmokeOnTrigger
-      - Flash
-      - Handcuff
-      - BallisticAmmoProvider
-      - CartridgeAmmo
-      - DoorRemote
-      - Whistle
-      - HolosignProjector
-      - BalloonPopper
   - type: ItemMapper
     mapLayers:
       flashbang:
