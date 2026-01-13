@@ -5,7 +5,7 @@
   id: Corvax
   name: КВСТ Корвакс
   description: Легкий ракетный корвет. Сокрушителен на дальних дистанциях.
-  price: 50000 #47000 appraisegrid
+  price: 57000 #47000 appraisegrid
   category: Small
   group: None
   path: /Maps/_Crescent/Shuttles/NCSP/corvax.yml

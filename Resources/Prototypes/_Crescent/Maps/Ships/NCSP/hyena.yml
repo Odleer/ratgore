@@ -5,7 +5,7 @@
   id: Hyena
   name: ПК Гиена
   description: Вооруженный корвет, способный к сверхсветовым прыжкам.
-  price: 72000 #appraisegrid of 60k~
+  price: 86000 #appraisegrid of 60k~
   category: Medium
   group: None
   path: /Maps/_Crescent/Shuttles/NCSP/hyena.yml

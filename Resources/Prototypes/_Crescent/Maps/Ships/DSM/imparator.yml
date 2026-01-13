@@ -1,6 +1,6 @@
 - type: vessel
   id: Imparator
-  name: БМС Триумвир
+  name: БМС Трамвар
   description: |
     Имперский артиллерийский корабль, предназначенный для стрельбы с задних линий и огневой поддержки на расстоянии. Слаб в ближнем бою, имеет только 1 PDT как вторичное оружие.
     LOADOUT: 1x SHI 120mm Cannon, 1x SHI 20x135mm PDT
@@ -12,7 +12,7 @@
 
 - type: gameMap
   id: Imparator
-  mapName: 'БМС Триумвир'
+  mapName: 'БМС Трамвар'
   mapPath: /Maps/_Crescent/Shuttles/DSM/imparator.yml
   minPlayers: 0
   stations:
@@ -24,7 +24,7 @@
             sprite: _Crescent/ShipIcons/ifficons.rsi
             state: fighter
         - type: StationNameSetup
-          mapNameTemplate: 'БМС Триумвир {1}'
+          mapNameTemplate: 'БМС Трамвар {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

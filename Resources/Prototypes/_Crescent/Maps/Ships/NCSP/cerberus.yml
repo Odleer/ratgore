@@ -5,7 +5,7 @@
   id: Cerberus
   name: КВСТ Цербер
   description: Защищенный эсминец Синдиката.
-  price: 85000 #77000 appraisegrid
+  price: 100000 #77000 appraisegrid
   category: Medium
   group: None
   path: /Maps/_Crescent/Shuttles/NCSP/cerberus.yml

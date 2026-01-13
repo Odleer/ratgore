@@ -5,7 +5,7 @@
   id: Zorniy
   name: ЛРНП Зорний
   description: Лёгкий коммунарский бомбардировщик.
-  price: 32000
+  price: 45000
   category: Small
   group: None
   path: /Maps/_Crescent/Shuttles/NCWL/zorniy.yml

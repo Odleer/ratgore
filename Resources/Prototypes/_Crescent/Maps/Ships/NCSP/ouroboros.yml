@@ -5,7 +5,7 @@
   id: Ouroboros
   name: КВСТ Уроборос
   description: Скрытный авианосец Синдиката.
-  price: 65000 #65000 appraisegrid
+  price: 120000 #65000 appraisegrid
   category: Medium
   group: None
   path: /Maps/_Crescent/Shuttles/NCSP/ouroboros.yml

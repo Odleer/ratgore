@@ -5,7 +5,7 @@
   id: Itch
   name: МГ Зудень
   description: Маленький скрытный истребитель.
-  price: 25000 #23000 appraisegrid
+  price: 26000 #23000 appraisegrid
   category: Small
   group: None
   path: /Maps/_Crescent/Shuttles/NCSP/itch.yml

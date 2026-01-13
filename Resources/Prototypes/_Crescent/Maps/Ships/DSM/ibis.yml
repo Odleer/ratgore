@@ -2,7 +2,7 @@
   id: Ibis
   name: БМС Ибис
   description: Тяжёлый истребитель, оснащённый блуждающим эмиттером щита, предназначенный для миссий дальнего радиуса действия.
-  price: 38000
+  price: 45000
   category: Small
   group: None
   path: /Maps/_Crescent/Shuttles/DSM/ibis.yml

@@ -2,7 +2,7 @@
   id: Nazaar
   name: СКБ Назар
   description: Патрульный канонерский катер Корпоративной Безопасности.
-  price: 27500
+  price: 30000
   category: Small
   group: None
   path: /Maps/_Crescent/Shuttles/SHI/nazaar.yml

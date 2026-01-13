@@ -5,7 +5,7 @@
   id: Rockchipper
   name: ПК Кабитель
   description: Шаттл собранный из разрушенных "Термитов". Создана для интенсивных горных работ.
-  price: 19000
+  price: 20000
   category: Small
   group: None
   path: /Maps/_Crescent/Shuttles/NCSP/rockchipper.yml

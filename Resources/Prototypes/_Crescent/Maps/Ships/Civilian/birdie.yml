@@ -5,7 +5,7 @@
   id: Birdie
   name: ГПИ Пташка
   description: Гражданский транспорт-шаттл, переоборудованный медицинским снаряжением для использования в качестве лёгкого судна медэвакуации.  
-  price: 32000
+  price: 33000
   category: Small
   group: Civilian
   path: /Maps/_Crescent/Shuttles/Civilian/birdie.yml
