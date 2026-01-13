@@ -702,10 +702,11 @@
   parent: BaseAmmoRecipe
   id: MagazinePistol
   result: MagazinePistol
-  materials:
-  category: Ammo
-  completetime: 5
-  Steel: 25
+
+- type: latheRecipe
+  parent: BaseEmptyAmmoRecipe
+  id: MagazinePistolEmpty
+  result: MagazinePistolEmpty
 
 - type: latheRecipe
   id: MagazinePistolIncendiary
