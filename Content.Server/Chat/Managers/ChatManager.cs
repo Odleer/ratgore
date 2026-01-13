@@ -18,6 +18,8 @@ using Robust.Shared.Network;
 using Robust.Shared.Player;
 using Robust.Shared.Replays;
 using Robust.Shared.Utility;
+using Content.Server._Forge.Sponsors; // Forge-Change
+using Content.Shared._Forge.Sponsors; // Forge-Change
 
 namespace Content.Server.Chat.Managers;
 
@@ -44,6 +46,7 @@ internal sealed partial class ChatManager : IChatManager
     [Dependency] private readonly INetConfigurationManager _netConfigManager = default!;
     [Dependency] private readonly IEntityManager _entityManager = default!;
     [Dependency] private readonly PlayerRateLimitManager _rateLimitManager = default!;
+    [Dependency] private readonly SponsorManager _sponsors = default!; // Forge-Change
 
     private ISawmill _sawmill = default!;
 
@@ -254,6 +257,14 @@ internal sealed partial class ChatManager : IChatManager
             var prefs = _preferencesManager.GetPreferences(player.UserId);
             colorOverride = prefs.AdminOOCColor;
         }
+        // Forge-Change-Start
+        if (_sponsors.TryGetSponsor(player.UserId, out SponsorLevel level)
+            && _sponsors.TryGetSponsorColor(level, out var sponsorColor)
+            && !_adminManager.HasAdminFlag(player, AdminFlags.Admin))
+        {
+            wrappedMessage = Loc.GetString("chat-manager-send-ooc-patron-wrap-message", ("patronColor", sponsorColor), ("playerName", player.Name), ("message", FormattedMessage.EscapeText(message)));
+        }
+        // Forge-Change-End
         if (  _netConfigManager.GetClientCVar(player.Channel, CCVars.ShowOocPatronColor) && player.Channel.UserData.PatronTier is { } patron && PatronOocColors.TryGetValue(patron, out var patronColor))
         {
             wrappedMessage = Loc.GetString("chat-manager-send-ooc-patron-wrap-message", ("patronColor", patronColor),("playerName", player.Name), ("message", FormattedMessage.EscapeText(message)));

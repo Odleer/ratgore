@@ -3,8 +3,6 @@ using Content.Client.Changelog;
 using Content.Client.Chat.Managers;
 using Content.Client.Clickable;
 using Content.Client.DeltaV.NanoChat;
-using Content.Client.DiscordAuth;
-using Content.Client.JoinQueue;
 using Content.Client.DebugMon;
 using Content.Client.Eui;
 using Content.Client.Fullscreen;
@@ -26,6 +24,9 @@ using Content.Shared.Administration.Managers;
 using Content.Shared.Chat;
 using Content.Shared.Players.PlayTimeTracking;
 using Content.Shared.Players.RateLimiting;
+using Content.Client._Forge.Sponsors; // Forge-Change
+using Content.Shared._Forge.Sponsors; // Forge-Change
+using Content.Client._Forge.DiscordAuth; // Forge-Change
 namespace Content.Client.IoC
 {
     internal static class ClientContentIoC
@@ -55,13 +56,14 @@ namespace Content.Client.IoC
             collection.Register<DocumentParsingManager>();
             collection.Register<ContentReplayPlaybackManager>();
             collection.Register<ISharedPlaytimeManager, JobRequirementsManager>();
-            collection.Register<JoinQueueManager>();
-            collection.Register<DiscordAuthManager>();
             collection.Register<PlayerRateLimitManager>();
             collection.Register<SharedPlayerRateLimitManager, PlayerRateLimitManager>();
             collection.Register<NanoChatSystem>();
             collection.Register<MappingManager>();
             collection.Register<DebugMonitorManager>();
+            collection.Register<DiscordAuthManager>(); // Forge-Change
+            collection.Register<SponsorManager>(); // Forge-Change
+            collection.Register<ISharedSponsorManager, SponsorManager>(); // Forge-Change
         }
     }
 }

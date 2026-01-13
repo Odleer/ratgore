@@ -1,5 +1,6 @@
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
+using Content.Shared._Forge.Sponsors;
 
 namespace Content.Shared.Humanoid.Prototypes;
 
@@ -193,6 +194,12 @@ public sealed partial class SpeciesPrototype : IPrototype
     /// </summary>
     [DataField]
     public int BonusTraitPoints;
+
+    // Forge-Change-Start:
+    [DataField("sponsorLevel")]
+    public SponsorLevel SponsorLevel = SponsorLevel.None;
+    // Forge-Change-End
+
 }
 
 public enum SpeciesNaming : byte

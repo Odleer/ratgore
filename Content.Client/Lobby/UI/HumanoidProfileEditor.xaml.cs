@@ -42,6 +42,9 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Utility;
 using Direction = Robust.Shared.Maths.Direction;
+using Content.Client._Forge.Sponsors; // Forge-Change
+using Content.Shared._Forge.ForgeVars; // Forge-Change
+using Content.Shared._Forge.Sponsors; // Forge-Change
 
 namespace Content.Client.Lobby.UI
 {
@@ -61,6 +64,7 @@ namespace Content.Client.Lobby.UI
         private readonly LobbyUIController _controller;
         private readonly CharacterRequirementsSystem _characterRequirementsSystem;
         private readonly RoleSystem _roleSystem;
+        private readonly SponsorManager _sponsorMan; // Forge-Change
 
         private FlavorText.FlavorText? _flavorText;
         private TextEdit? _flavorTextEdit;
@@ -143,7 +147,8 @@ namespace Content.Client.Lobby.UI
             IResourceManager resManager,
             JobRequirementsManager requirements,
             MarkingManager markings,
-            IRobustRandom random
+            IRobustRandom random,
+            SponsorManager sponsorMan
         )
         {
             RobustXamlLoader.Load(this);
@@ -158,6 +163,7 @@ namespace Content.Client.Lobby.UI
             _resManager = resManager;
             _requirements = requirements;
             _random = random;
+            _sponsorMan = sponsorMan;
 
             _roleSystem = _entManager.System<RoleSystem>();
             _characterRequirementsSystem = _entManager.System<CharacterRequirementsSystem>();
@@ -651,12 +657,21 @@ namespace Content.Client.Lobby.UI
         {
             SpeciesButton.Clear();
             _species.Clear();
+            var userId = _playerManager.LocalUser;
 
             _species.AddRange(_prototypeManager.EnumeratePrototypes<SpeciesPrototype>().Where(o => o.RoundStart));
             var speciesIds = _species.Select(o => o.ID).ToList();
 
             for (var i = 0; i < _species.Count; i++)
             {
+                if (_species[i].SponsorLevel != SponsorLevel.None && userId != null)
+                {
+                    if (!_sponsorMan.TryGetSponsor(userId.Value, out var level))
+                        continue;
+                    if (_species[i].SponsorLevel > level)
+                        continue;
+                }
+
                 SpeciesButton.AddItem(Loc.GetString(_species[i].Name), i);
 
                 if (Profile?.Species.Equals(_species[i].ID) == true)

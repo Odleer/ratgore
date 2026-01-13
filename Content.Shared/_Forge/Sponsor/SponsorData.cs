@@ -1,0 +1,57 @@
+
+namespace Content.Shared._Forge.Sponsors;
+
+public sealed class SponsorData
+{
+    public static readonly Dictionary<string, SponsorLevel> RolesMap = new()
+    {
+        { "1356590198628155526", SponsorLevel.Level1 }, // Педаль
+        { "1460211939312537630", SponsorLevel.Level2 }, // Рядовой
+        { "1460212133290836009", SponsorLevel.Level3 }, // Сержант
+        { "1460212173086130339", SponsorLevel.Level4 }, // Майор
+        { "1460212230539710639", SponsorLevel.Level5 }, // Адмирал
+        { "1460212505778454588", SponsorLevel.Level6 }, // Резерв1
+        { "1460212525663785145", SponsorLevel.Level7 }, // Резерв2
+        { "1460212547239280650", SponsorLevel.Level8 } // Резерв3
+    };
+
+    public static readonly Dictionary<SponsorLevel, string> SponsorColor = new()
+    {
+        { SponsorLevel.Level1, "#6bb9f0" },
+        { SponsorLevel.Level2, "#FACC15" },
+        { SponsorLevel.Level3, "#FB923C" },
+        { SponsorLevel.Level4, "#F75656" },
+        { SponsorLevel.Level5, "#FFFFFF" }
+    };
+
+    public static readonly Dictionary<SponsorLevel, string> SponsorGhost = new()
+    {
+        { SponsorLevel.Level3, "MobObserver" },
+        { SponsorLevel.Level4, "MobObserver" },
+        { SponsorLevel.Level5, "MobObserver" }
+    };
+
+    public static SponsorLevel ParseRoles(List<string> roles)
+    {
+        var highestRole = SponsorLevel.None;
+        foreach (var role in roles)
+        {
+            if (RolesMap.ContainsKey(role))
+                if ((byte) RolesMap[role] > (byte) highestRole)
+                    highestRole = RolesMap[role];
+        }
+
+        return highestRole;
+    }
+}
+
+public enum SponsorLevel : byte
+{
+    None = 0,
+    Level1 = 1,
+    Level2 = 2,
+    Level3 = 3,
+    Level4 = 4,
+    Level5 = 5,
+    Level6 = 6
+}

@@ -18,6 +18,8 @@ using Robust.Shared.Network;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Player;
 using Robust.Shared.Timing;
+using Content.Server._Forge.Discord; // Forge-Change
+using Content.Server._Forge.Sponsors; // Forge-Change
 
 /*
  * TODO: Remove baby jail code once a more mature gateway process is established. This code is only being issued as a stopgap to help with potential tiding in the immediate future.
@@ -64,6 +66,8 @@ namespace Content.Server.Connection
         [Dependency] private readonly IChatManager _chatManager = default!;
         [Dependency] private readonly IHttpClientHolder _http = default!;
         [Dependency] private readonly IAdminManager _adminManager = default!;
+        [Dependency] private readonly SponsorManager _sponsorMan = default!; // Forge-Change
+        [Dependency] private readonly DiscordAuthManager _discordAuth = default!; // Forge-Change
 
         private ISawmill _sawmill = default!;
         private readonly Dictionary<NetUserId, TimeSpan> _temporaryBypasses = [];

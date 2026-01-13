@@ -6,14 +6,12 @@ using Content.Server.Afk;
 using Content.Server.Chat.Managers;
 using Content.Server.Connection;
 using Content.Server.Database;
-using Content.Server.DiscordAuth;
 using Content.Server.EUI;
 using Content.Server.GameTicking;
 using Content.Server.GhostKick;
 using Content.Server.GuideGenerator;
 using Content.Server.Info;
 using Content.Server.IoC;
-using Content.Server.JoinQueue;
 using Content.Server.Maps;
 using Content.Server.NodeContainer.NodeGroups;
 using Content.Server.Objectives;
@@ -35,6 +33,8 @@ using Robust.Shared.ContentPack;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
+using Content.Server._Forge.Discord; // Forge-Change
+using Content.Server._Forge.Sponsors; // Forge-Change
 
 namespace Content.Server.Entry
 {
@@ -111,7 +111,6 @@ namespace Content.Server.Entry
                 IoCManager.Resolve<ContentNetworkResourceManager>().Initialize();
                 IoCManager.Resolve<GhostKickManager>().Initialize();
                 IoCManager.Resolve<ServerInfoManager>().Initialize();
-                IoCManager.Resolve<JoinQueueManager>().Initialize();
                 IoCManager.Resolve<DiscordAuthManager>().Initialize();
                 IoCManager.Resolve<ServerApi>().Initialize();
 
@@ -158,6 +157,7 @@ namespace Content.Server.Entry
                 IoCManager.Resolve<IConnectionManager>().PostInit();
                 IoCManager.Resolve<MultiServerKickManager>().Initialize();
                 IoCManager.Resolve<CVarControlManager>().Initialize();
+                IoCManager.Resolve<SponsorManager>().Initialize(); // Forge-Change
             }
         }
 
