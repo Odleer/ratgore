@@ -703,6 +703,8 @@
   id: MagazinePistol
   result: MagazinePistol
   materials:
+  category: Ammo
+  completetime: 5
   Steel: 25
 
 
@@ -710,6 +712,8 @@
   parent: BaseEmptyAmmoRecipe
   id: MagazinePistolEmpty
   result: MagazinePistolEmpty
+  category: Ammo
+  completetime: 5
   materials:
   Steel: 25
 
