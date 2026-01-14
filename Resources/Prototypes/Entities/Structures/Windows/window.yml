@@ -90,7 +90,7 @@
     allowedVerbs:
     - KnockOn
 
-# Tinted window
+
 - type: entity
   parent: Window
   id: TintedWindow
@@ -109,7 +109,15 @@
   - type: StaticPrice
     price: 70
 
-# Directional window
+
+- type: entity
+  id: WindowRCDResistant
+  parent: Window
+  abstract: true
+  components:
+  - type: RCDDeconstructable
+    deconstructable: false
+
 - type: entity
   id: WindowDirectional
   parent: BaseStructure
@@ -201,7 +209,14 @@
     allowedVerbs:
     - KnockOn
 
-# Frosted directional window
+- type: entity
+  id: WindowDirectionalRCDResistant
+  parent: WindowDirectional
+  abstract: true
+  components:
+  - type: RCDDeconstructable
+    deconstructable: false
+
 - type: entity
   id: WindowFrostedDirectional
   parent: WindowDirectional
@@ -218,7 +233,6 @@
   - type: StaticPrice
     price: 35
 
-# Diagonal window
 - type: entity
   parent: Window
   id: WindowDiagonal
