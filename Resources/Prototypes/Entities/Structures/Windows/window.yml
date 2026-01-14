@@ -99,8 +99,7 @@
   - type: Sprite
     drawdepth: WallTops
     sprite: Structures/Windows/tinted_window.rsi
-  - type: Icon
-    sprite: Structures/Windows/tinted_window.rsi
+    state: window
   - type: IconSmooth
     base: twindow
   - type: Construction
@@ -109,6 +108,7 @@
   - type: Occluder
   - type: StaticPrice
     price: 70
+
 
 - type: entity
   id: WindowRCDResistant
@@ -129,7 +129,7 @@
     - Window
   components:
   - type: WallMount
-    arc: 360 # interact despite grilles
+    arc: 360
   - type: Tag
     tags:
       - Window
@@ -141,9 +141,6 @@
         collection: GlassSmack
   - type: Sprite
     drawdepth: Mobs
-    sprite: Structures/Windows/directional.rsi
-    state: window
-  - type: Icon
     sprite: Structures/Windows/directional.rsi
     state: window
   - type: Physics
@@ -172,7 +169,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 50 #excess damage (nuke?). avoid computational cost of spawning entities.
+        damage: 50
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -233,9 +230,6 @@
   - type: Sprite
     sprite: Structures/Windows/directional.rsi
     state: frosted_window
-  - type: Icon
-    sprite: Structures/Windows/directional.rsi
-    state: frosted_window
   - type: StaticPrice
     price: 35
 
@@ -259,9 +253,6 @@
     mode: Diagonal
     key: walls
     base: state
-  - type: Icon
-    sprite: Structures/Windows/window_diagonal.rsi
-    state: state0
   - type: Fixtures
     fixtures:
       fix1:
