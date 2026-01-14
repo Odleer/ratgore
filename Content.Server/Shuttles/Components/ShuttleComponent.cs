@@ -21,7 +21,7 @@ namespace Content.Server.Shuttles.Components
         /// Maximum velocity assuming unupgraded, tier 1 thrusters
         /// </summary>
         [ViewVariables(VVAccess.ReadWrite), DataField]
-        public float BaseMaxLinearVelocity = 20f;
+        public float BaseMaxLinearVelocity = 30f;
 
         public const float MaxAngularVelocity = 6f;
 
@@ -61,7 +61,7 @@ namespace Content.Server.Shuttles.Components
         /// Damping applied to the shuttle's physics component when not in FTL.
         /// </summary>
         [DataField("linearDamping"), ViewVariables(VVAccess.ReadWrite)]
-        public float LinearDamping = 0.05f;
+        public float LinearDamping = 0.025f;
 
         [DataField("angularDamping"), ViewVariables(VVAccess.ReadWrite)]
         public float AngularDamping = 0.05f;
@@ -89,7 +89,7 @@ namespace Content.Server.Shuttles.Components
         /// At what Thrust-Weight-Ratio should this ship have the base max velocity as its maximum velocity.
         /// </summary>
         [DataField]
-        public float BaseMaxVelocityTWR = 2f;
+        public float BaseMaxVelocityTWR = 8f;
 
         /// <summary>
         /// How much should TWR affect max velocity.
