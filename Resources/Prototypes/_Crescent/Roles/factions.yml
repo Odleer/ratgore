@@ -106,7 +106,7 @@
     Но с уничтожением Либерталия эти группы разошлись ещё дальше, часто воюя друг с другом.
   color: "#9FED58"
   weight: 6
-  enabled: false
+  enabled: true
   icon:
     sprite: /Textures/_Crescent/faction_icons.rsi
     state: tfsc

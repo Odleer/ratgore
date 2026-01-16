@@ -56,9 +56,6 @@
             "name": "miner"
         },
         {
-            "name": "outpost"
-        },
-        {
             "name": "player_deployed_outpost"
         },
         {
@@ -68,7 +65,7 @@
             "name": "point_of_interest"
         },
         {
-            "name": "primordial_abyss_dweller"
+            "name": "primordial_abyssdweller"
         },
         {
             "name": "rogue_drone"
