@@ -204,3 +204,10 @@ Entries:
   id: 29
   time: '2026-01-16T05:22:49Z'
   url: null
+- author: Odleer
+  changes:
+    - message: Откат скорости проджектайлов
+      type: Tweak
+  id: 30
+  time: '2026-01-16T05:25:03Z'
+  url: null
