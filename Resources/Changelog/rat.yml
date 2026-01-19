@@ -279,5 +279,12 @@
   id: 36
   time: '2026-01-18T15:09:16.0000000+00:00'
   url: https://github.com/ss14-art/ratgore/pull/3
+- author: Odleer
+  changes:
+  - message: "\u041D\u043E\u0432\u0430\u044F \u043A\u0430\u0440\u0442\u0430!"
+    type: Add
+  id: 37
+  time: '2026-01-19T18:04:39.0000000+00:00'
+  url: https://github.com/ss14-art/ratgore/pull/4
 Name: Rat
 Order: -1
