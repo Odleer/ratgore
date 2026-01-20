@@ -29,7 +29,7 @@
 
 ```
 # 1. Клонируйте репозиторий
-git clone https://github.com/Odleer/Ratgore.git
+git clone https://github.com/ss14-art/ratgore.git
 cd ratgore
 
 # 2. Загрузите движок
@@ -48,7 +48,7 @@ Scripts\bat\runQuickAll.bat
 
 ```
 # 1. Клонируйте репозиторий
-git clone https://github.com/Odleer/Ratgore.git
+git clone https://github.com/ss14-art/ratgore.git
 cd ratgore
 
 # 2. Загрузите движок
