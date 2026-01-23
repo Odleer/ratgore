@@ -421,10 +421,10 @@
 - type: spaceBiome
   id: RatCraster
   priority: 9000
-  minX: -87
-  maxX: -78
-  minY: 7
-  maxY: 16
+  minX: 12
+  maxX: 19
+  minY: -15
+  maxY: -8
   noiseRanges: {}
   chunkComponents:
   - type: DebrisFeaturePlacerController
